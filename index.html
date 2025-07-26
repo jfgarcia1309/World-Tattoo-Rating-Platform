@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Tattoo Rating Platform</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Notification Container -->
+  <div id="notificationContainer" class="notification-container"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="brand-icon">
+          <i class="fas fa-dragon"></i>
+        </div>
+        <div class="brand-text">
+          <h2>World Tattoo Rating</h2>
+          <span class="brand-subtitle">Global Platform</span>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link active" data-section="home">
+          <i class="fas fa-home"></i>
+          <span>Inicio</span>
+        </a>
+        <a href="#registro" class="nav-link" data-section="registro">
+          <i class="fas fa-user-plus"></i>
+          <span>Registro</span>
+        </a>
+        <a href="#evaluacion" class="nav-link" data-section="evaluacion">
+          <i class="fas fa-star"></i>
+          <span>Evaluación</span>
+        </a>
+        <a href="#resultados" class="nav-link" data-section="resultados">
+          <i class="fas fa-trophy"></i>
+          <span>Resultados</span>
+        </a>
+        <a href="#score" class="nav-link" data-section="score">
+          <i class="fas fa-trophy"></i>
+          <span>Score</span>
+        </a>
+        <a href="#administracion" class="nav-link" data-section="administracion">
+          <i class="fas fa-cog"></i>
+          <span>Admin</span>
+        </a>
+      </div>
+      <div class="nav-mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Home Section -->
+    <section id="home" class="section active">
+      <div class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="title-line">World Tattoo</span>
+              <span class="title-line accent">Rating Platform</span>
+            </h1>
+            <p class="hero-description">
+              La plataforma global más prestigiosa para la evaluación profesional de tatuajes.
+              Conectamos a los mejores artistas del mundo con jurados expertos para crear
+              un estándar internacional de excelencia en el arte del tatuaje.
+            </p>
+            <div class="hero-actions">
+              <a href="#registro" class="btn btn-primary" data-section="registro">
+                <i class="fas fa-rocket"></i>
+                <span>Comenzar Ahora</span>
+              </a>
+              <a href="#resultados" class="btn btn-secondary" data-section="resultados">
+                <i class="fas fa-trophy"></i>
+                <span>Ver Rankings</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="floating-elements">
+              <div class="floating-icon icon-1">
+                <i class="fas fa-dragon"></i>
+              </div>
+              <div class="floating-icon icon-2">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="floating-icon icon-3">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="floating-icon icon-4">
+                <i class="fas fa-crown"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats-section">
+        <div class="container">
+          <h2 class="section-title">Estadísticas Globales</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number" id="homeStatTatuadores">0</div>
+                <div class="stat-label">Tatuadores Registrados</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-gavel"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number" id="homeStatJurados">0</div>
+                <div class="stat-label">Jurados Expertos</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number" id="homeStatEvaluaciones">0</div>
+                <div class="stat-label">Evaluaciones Realizadas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Carousel Section -->
+      <div class="gallery-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Galería de Arte</h2>
+            <p class="section-subtitle">Momentos destacados de nuestros eventos mundiales</p>
+          </div>
+          <div class="carousel-container">
+            <button id="scrollLeft1" class="carousel-btn carousel-btn-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div id="carousel1" class="carousel-track">
+              <div class="carousel-item">
+                <div class="carousel-image-wrapper">
+                  <img src="https://r.mobirisesite.com/1585158/assets/images/photo-1552627019-947c3789ffb5.jpeg" alt="Arte de Tatuaje" class="carousel-image">
+                  <div class="carousel-overlay">
+                    <div class="carousel-overlay-content">
+                      <h4>Realismo Color</h4>
+                      <p>Arte hiperrealista</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-image-wrapper">
+                  <img src="https://r.mobirisesite.com/1585158/assets/images/photo-1591384761241-ad10dab7e0a5.jpeg" alt="Arte de Tatuaje" class="carousel-image">
+                  <div class="carousel-overlay">
+                    <div class="carousel-overlay-content">
+                      <h4>Color Vibrante</h4>
+                      <p>Paleta completa</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-image-wrapper">
+                  <img src="https://r.mobirisesite.com/1585158/assets/images/photo-1632873816056-b66c011ca3d3.jpeg" alt="Arte de Tatuaje" class="carousel-image">
+                  <div class="carousel-overlay">
+                    <div class="carousel-overlay-content">
+                      <h4>Neo-Tradicional</h4>
+                      <p>Estilo moderno</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-image-wrapper">
+                  <img src="https://r.mobirisesite.com/1585158/assets/images/photo-1632414345965-f1b2a911fbe5.jpeg" alt="Arte de Tatuaje" class="carousel-image">
+                  <div class="carousel-overlay">
+                    <div class="carousel-overlay-content">
+                      <h4>Arte Tradicional</h4>
+                      <p>Técnica clásica</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-image-wrapper">
+                  <img src="https://r.mobirisesite.com/1585158/assets/images/photo-1541121514895-0f36e7d38d14.jpeg" alt="Arte de Tatuaje" class="carousel-image">
+                  <div class="carousel-overlay">
+                    <div class="carousel-overlay-content">
+                      <h4>Realismo</h4>
+                      <p>Detalle fotográfico</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button id="scrollRight1" class="carousel-btn carousel-btn-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registro" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-user-plus"></i>
+            <span>Registro de Participantes</span>
+          </h2>
+          <p class="section-description">
+            Únete a la comunidad global de tatuadores y jurados expertos
+          </p>
+        </div>
+
+        <!-- Registro Login Panel -->
+        <div id="registroLogin" class="login-panel">
+          <div class="login-container">
+            <div class="login-header">
+              <div class="login-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Acceso al Registro</h3>
+              <p>Ingresa tus credenciales para acceder al sistema de registro</p>
+            </div>
+            <form id="registroLoginForm" class="login-form">
+              <div class="form-group">
+                <label for="registroUsername">
+                  <i class="fas fa-user"></i>
+                  <span>Usuario</span>
+                </label>
+                <input type="text" id="registroUsername" name="username" required 
+                       placeholder="Nombre de usuario" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="registroPassword">
+                  <i class="fas fa-lock"></i>
+                  <span>Contraseña</span>
+                </label>
+                <input type="password" id="registroPassword" name="password" required 
+                       placeholder="Contraseña" autocomplete="off">
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>Iniciar Sesión</span>
+                </button>
+                <button type="button" class="btn btn-link" onclick="AuthManager.showPasswordRecovery('registro')">
+                  ¿Olvidaste tu contraseña?
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Registration Panel -->
+        <div id="registroPanel" class="registration-panel hidden">
+          <div class="panel-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="user-details">
+                <span class="user-name" id="registroUserName">Usuario</span>
+                <span class="user-role">Administrador de Registro</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary" onclick="app.logout('registro')">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Cerrar Sesión</span>
+            </button>
+          </div>
+
+          <div class="registration-content">
+            <div class="registration-tabs">
+              <div class="tabs-header">
+                <button class="tab-btn active" data-tab="tatuadores">
+                  <i class="fas fa-paint-brush"></i>
+                  <span>Tatuadores</span>
+                </button>
+                <button class="tab-btn" data-tab="jurados">
+                  <i class="fas fa-gavel"></i>
+                  <span>Jurados</span>
+                </button>
+              </div>
+
+              <!-- Tatuadores Tab -->
+              <div id="tatuadoresTab" class="tab-pane active">
+                <div class="form-container">
+                  <div class="form-header">
+                    <h3>Registro de Tatuador</h3>
+                    <p>Compite en las categorías más prestigiosas del mundo</p>
+                  </div>
+                  <form id="tatuadorForm" class="registration-form">
+                    <div class="form-group">
+                      <label for="tatuadorNombre">
+                        <i class="fas fa-user"></i>
+                        <span>Nombre Completo</span>
+                      </label>
+                      <input type="text" id="tatuadorNombre" name="nombre" required 
+                             placeholder="Ingresa tu nombre completo">
+                      <div class="form-hint">Nombre artístico o real</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="tatuadorCategoria">
+                        <i class="fas fa-tags"></i>
+                        <span>Categoría de Especialización</span>
+                      </label>
+                      <select id="tatuadorCategoria" name="categoria" required>
+                        <option value="">Selecciona tu especialidad</option>
+                        <option value="anime-comic">Anime y Comic</option>
+                        <option value="blackwork">Blackwork</option>
+                        <option value="color">Color</option>
+                        <option value="lettering">Lettering</option>
+                        <option value="homenaje">Homenaje</option>
+                        <option value="libre">Libre</option>
+                        <option value="neotradi">Neo-Tradicional</option>
+                        <option value="nuevo-artista">Nuevo Artista</option>
+                        <option value="r-color">Realismo Color</option>
+                        <option value="r-sombras">Realismo Sombras</option>
+                        <option value="sombras">Sombras</option>
+                        <option value="tradicionales">Tradicionales</option>
+                      </select>
+                      <div class="form-hint">Elige la categoría que mejor represente tu estilo</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="tatuadorEmail">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                      </label>
+                      <input type="email" id="tatuadorEmail" name="email" required 
+                             placeholder="tu@email.com">
+                      <div class="form-hint">Usaremos este email para comunicaciones oficiales</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="tatuadorTelefono">
+                        <i class="fas fa-phone"></i>
+                        <span>Teléfono</span>
+                      </label>
+                      <input type="tel" id="tatuadorTelefono" name="telefono" required 
+                             placeholder="+1234567890">
+                      <div class="form-hint">Incluye código de país</div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        <span>Registrar Tatuador</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Jurados Tab -->
+              <div id="juradosTab" class="tab-pane">
+                <div class="form-container">
+                  <div class="form-header">
+                    <h3>Registro de Jurado</h3>
+                    <p>Evalúa y califica a los mejores tatuadores del mundo</p>
+                  </div>
+                  <form id="juradoForm" class="registration-form">
+                    <div class="form-group">
+                      <label for="juradoNombre">
+                        <i class="fas fa-user"></i>
+                        <span>Nombre Completo</span>
+                      </label>
+                      <input type="text" id="juradoNombre" name="nombre" required 
+                             placeholder="Ingresa tu nombre completo">
+                      <div class="form-hint">Nombre profesional</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="juradoEmail">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                      </label>
+                      <input type="email" id="juradoEmail" name="email" required 
+                             placeholder="tu@email.com">
+                      <div class="form-hint">Email profesional verificado</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="juradoExperiencia">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Años de Experiencia</span>
+                      </label>
+                      <input type="number" id="juradoExperiencia" name="experiencia" min="1" max="50" required 
+                             placeholder="10">
+                      <div class="form-hint">Años de experiencia profesional en tatuajes</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="juradoEspecialidad">
+                        <i class="fas fa-star"></i>
+                        <span>Especialidad</span>
+                      </label>
+                      <input type="text" id="juradoEspecialidad" name="especialidad" required 
+                             placeholder="Realismo, Tradicional, etc.">
+                      <div class="form-hint">Tu área de especialización principal</div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-gavel"></i>
+                        <span>Registrar Jurado</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluation Section -->
+    <section id="evaluacion" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-star"></i>
+            <span>Sistema de Evaluación</span>
+          </h2>
+          <p class="section-description">
+            Panel profesional para la evaluación de tatuajes
+          </p>
+        </div>
+
+        <!-- Login Panel -->
+        <div id="evaluacionLogin" class="login-panel">
+          <div class="login-container">
+            <div class="login-header">
+              <div class="login-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Acceso de Evaluadores</h3>
+              <p>Ingresa tus credenciales para acceder al sistema de evaluación</p>
+            </div>
+            <form id="evaluacionLoginForm" class="login-form">
+              <div class="form-group">
+                <label for="evaluacionUsername">
+                  <i class="fas fa-user"></i>
+                  <span>Usuario</span>
+                </label>
+                <input type="text" id="evaluacionUsername" name="username" required 
+                       placeholder="Nombre de usuario" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="evaluacionPassword">
+                  <i class="fas fa-lock"></i>
+                  <span>Contraseña</span>
+                </label>
+                <input type="password" id="evaluacionPassword" name="password" required 
+                       placeholder="Contraseña" autocomplete="off">
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>Iniciar Sesión</span>
+                </button>
+                <button type="button" class="btn btn-link" onclick="AuthManager.showPasswordRecovery('evaluacion')">
+                  ¿Olvidaste tu contraseña?
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Evaluation Panel -->
+        <div id="evaluacionPanel" class="evaluation-panel hidden">
+          <div class="panel-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="user-details">
+                <span class="user-name" id="evaluacionUserName">Usuario</span>
+                <span class="user-role">Evaluador</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary" onclick="app.logout('evaluacion')">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Cerrar Sesión</span>
+            </button>
+          </div>
+
+          <div class="evaluation-content">
+            <div class="selection-section">
+              <h4>Seleccionar Participantes</h4>
+              <div class="selection-grid">
+                <div class="form-group">
+                  <label for="juradoSelect">
+                    <i class="fas fa-gavel"></i>
+                    <span>Jurado Evaluador</span>
+                  </label>
+                  <select id="juradoSelect" class="form-control">
+                    <option value="">Selecciona un jurado</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="tatuadorSelect">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Tatuador a Evaluar</span>
+                  </label>
+                  <select id="tatuadorSelect" class="form-control">
+                    <option value="">Selecciona un tatuador</option>
+                  </select>
+                </div>
+              </div>
+              
+              <!-- Información de restricciones -->
+              <div class="evaluation-restrictions">
+                <div class="restriction-notice">
+                  <i class="fas fa-info-circle"></i>
+                  <strong>Importante:</strong> Un jurado solo puede evaluar a un tatuador una vez por categoría.
+                </div>
+                <div id="evaluationRestrictions" class="restrictions-container">
+                  <!-- Se llenará dinámicamente con JavaScript -->
+                </div>
+              </div>
+            </div>
+
+            <div id="evaluacionForm" class="evaluation-form hidden">
+              <div class="evaluation-header">
+                <div class="eval-info-grid">
+                  <div class="eval-info-item">
+                    <label>Jurado:</label>
+                    <span id="selectedJuradoName">-</span>
+                  </div>
+                  <div class="eval-info-item">
+                    <label>Tatuador:</label>
+                    <span id="selectedTatuadorName">-</span>
+                  </div>
+                  <div class="eval-info-item">
+                    <label>Categoría:</label>
+                    <span id="selectedCategoria">-</span>
+                  </div>
+                  <div class="eval-info-item total-score">
+                    <label>Promedio Total:</label>
+                    <span id="promedioTotal" class="score-display">0.0</span>
+                  </div>
+                </div>
+              </div>
+
+              <form id="criteriosForm" class="criterios-form">
+                <div id="criteriosContainer" class="criterios-container">
+                  <!-- Criterios will be populated dynamically -->
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i>
+                    <span>Guardar Evaluación</span>
+                  </button>
+                  <button type="button" class="btn btn-secondary" onclick="app.resetEvaluationForm()">
+                    <i class="fas fa-undo"></i>
+                    <span>Limpiar Formulario</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultados" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-trophy"></i>
+            <span>Resultados y Rankings</span>
+          </h2>
+          <p class="section-description">
+            Descubre a los mejores tatuadores del mundo según nuestros expertos
+          </p>
+        </div>
+
+        <!-- Resultados Login Panel -->
+        <div id="resultadosLogin" class="login-panel">
+          <div class="login-container">
+            <div class="login-header">
+              <div class="login-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Acceso a Resultados</h3>
+              <p>Ingresa tus credenciales para acceder al sistema de resultados</p>
+            </div>
+            <form id="resultadosLoginForm" class="login-form">
+              <div class="form-group">
+                <label for="resultadosUsername">
+                  <i class="fas fa-user"></i>
+                  <span>Usuario</span>
+                </label>
+                <input type="text" id="resultadosUsername" name="username" required 
+                       placeholder="Nombre de usuario" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="resultadosPassword">
+                  <i class="fas fa-lock"></i>
+                  <span>Contraseña</span>
+                </label>
+                <input type="password" id="resultadosPassword" name="password" required 
+                       placeholder="Contraseña" autocomplete="off">
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>Iniciar Sesión</span>
+                </button>
+                <button type="button" class="btn btn-link" onclick="AuthManager.showPasswordRecovery('resultados')">
+                  ¿Olvidaste tu contraseña?
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Results Panel -->
+        <div id="resultadosPanel" class="results-panel hidden">
+          <div class="panel-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="user-details">
+                <span class="user-name" id="resultadosUserName">Usuario</span>
+                <span class="user-role">Administrador de Resultados</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary" onclick="app.logout('resultados')">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Cerrar Sesión</span>
+            </button>
+          </div>
+
+          <div class="results-content">
+            <div class="results-controls">
+              <div class="filter-section">
+                <label for="categoriaFilter">
+                  <i class="fas fa-filter"></i>
+                  <span>Filtrar por Categoría</span>
+                </label>
+                <select id="categoriaFilter" class="form-control">
+                  <option value="">Todas las categorías</option>
+                  <option value="anime-comic">Anime y Comic</option>
+                  <option value="blackwork">Blackwork</option>
+                  <option value="color">Color</option>
+                  <option value="lettering">Lettering</option>
+                  <option value="homenaje">Homenaje</option>
+                  <option value="libre">Libre</option>
+                  <option value="neotradi">Neo-Tradicional</option>
+                  <option value="nuevo-artista">Nuevo Artista</option>
+                  <option value="r-color">Realismo Color</option>
+                  <option value="r-sombras">Realismo Sombras</option>
+                  <option value="sombras">Sombras</option>
+                  <option value="tradicionales">Tradicionales</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="results-container">
+              <div class="results-table-wrapper">
+                <table class="results-table">
+                  <thead>
+                    <tr>
+                      <th class="ranking-header">
+                        <i class="fas fa-trophy"></i>
+                        <span>Ranking</span>
+                      </th>
+                      <th class="artist-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Tatuador</span>
+                      </th>
+                      <th class="category-header">
+                        <i class="fas fa-tags"></i>
+                        <span>Categoría</span>
+                      </th>
+                      <th class="score-header">
+                        <i class="fas fa-star"></i>
+                        <span>Puntuación</span>
+                      </th>
+                      <th class="average-header">
+                        <i class="fas fa-calculator"></i>
+                        <span>Promedio</span>
+                      </th>
+                      <th class="judge-header">
+                        <i class="fas fa-gavel"></i>
+                        <span>Evaluado por</span>
+                      </th>
+                      <th class="date-header">
+                        <i class="fas fa-calendar"></i>
+                        <span>Fecha</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="resultadosTableBody">
+                    <tr class="no-data">
+                      <td colspan="7">
+                        <i class="fas fa-info-circle"></i>
+                        <span>No hay evaluaciones disponibles</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Score Section -->
+    <section id="score" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-trophy"></i>
+            <span>Puntuaciones y Calificaciones</span>
+          </h2>
+          <p class="section-description">
+            Sistema avanzado de puntuaciones con métricas detalladas y análisis comparativo
+          </p>
+        </div>
+
+        <div class="score-dashboard">
+          <div class="score-filters">
+            <div class="filter-group">
+              <label for="scoreCategoria">
+                <i class="fas fa-filter"></i>
+                <span>Filtrar por Categoría</span>
+              </label>
+              <select id="scoreCategoria" class="form-control">
+                <option value="">Todas las categorías</option>
+                <option value="anime-comic">Anime y Comic</option>
+                <option value="blackwork">Blackwork</option>
+                <option value="color">Color</option>
+                <option value="lettering">Lettering</option>
+                <option value="homenaje">Homenaje</option>
+                <option value="libre">Libre</option>
+                <option value="neotradi">Neo-Tradicional</option>
+                <option value="nuevo-artista">Nuevo Artista</option>
+                <option value="r-color">Realismo Color</option>
+                <option value="r-sombras">Realismo Sombras</option>
+                <option value="sombras">Sombras</option>
+                <option value="tradicionales">Tradicionales</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="scoreOrder">
+                <i class="fas fa-sort"></i>
+                <span>Ordenar por</span>
+              </label>
+              <select id="scoreOrder" class="form-control">
+                <option value="score">Puntuación</option>
+                <option value="name">Nombre</option>
+                <option value="category">Categoría</option>
+                <option value="evaluations">Número de Evaluaciones</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="score-metrics">
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="metric-content">
+                  <div class="metric-value" id="avgScore">0.0</div>
+                  <div class="metric-label">Promedio General</div>
+                </div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="metric-content">
+                  <div class="metric-value" id="topScore">0.0</div>
+                  <div class="metric-label">Puntuación Máxima</div>
+                </div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="metric-content">
+                  <div class="metric-value" id="totalEvaluated">0</div>
+                  <div class="metric-label">Tatuadores Evaluados</div>
+                </div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-icon">
+                  <i class="fas fa-medal"></i>
+                </div>
+                <div class="metric-content">
+                  <div class="metric-value" id="totalCategories">0</div>
+                  <div class="metric-label">Categorías Activas</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detailed-scores">
+            <div class="scores-header">
+              <h3>
+                <i class="fas fa-list"></i>
+                <span>Puntuaciones Detalladas</span>
+              </h3>
+
+            </div>
+
+            <div class="detailed-scores-container">
+              <div class="scores-table-wrapper">
+                <table class="scores-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <i class="fas fa-user"></i>
+                        <span>Tatuador</span>
+                      </th>
+                      <th>
+                        <i class="fas fa-tags"></i>
+                        <span>Categoría</span>
+                      </th>
+                      <th>
+                        <i class="fas fa-star"></i>
+                        <span>Promedio por Criterio</span>
+                      </th>
+                      <th>
+                        <i class="fas fa-users"></i>
+                        <span>Evaluaciones</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="scoresTableBody">
+                    <tr class="no-data">
+                      <td colspan="7">
+                        <i class="fas fa-info-circle"></i>
+                        <span>No hay puntuaciones disponibles</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Administration Section -->
+    <section id="administracion" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-cog"></i>
+            <span>Panel de Administración</span>
+          </h2>
+          <p class="section-description">
+            Control total del sistema de evaluación de tatuajes
+          </p>
+        </div>
+
+        <!-- Admin Login Panel -->
+        <div id="adminLogin" class="login-panel">          <div class="login-container">
+            <div class="login-header">
+              <div class="login-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Acceso de Administrador</h3>
+              <p>Solo personal autorizado puede acceder a este panel</p>
+            </div>
+            <form id="adminLoginForm" class="login-form">
+              <div class="form-group">
+                <label for="adminUsername">
+                  <i class="fas fa-user-shield"></i>
+                  <span>Usuario Administrador</span>
+                </label>
+                <input type="text" id="adminUsername" name="username" required 
+                       placeholder="Admin username" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="adminPassword">
+                  <i class="fas fa-lock"></i>
+                  <span>Contraseña</span>
+                </label>
+                <input type="password" id="adminPassword" name="password" required 
+                       placeholder="Admin password" autocomplete="off">
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>Acceder</span>
+                </button>
+                <button type="button" class="btn btn-link" onclick="AuthManager.showPasswordRecovery('admin')">
+                  ¿Olvidaste tu contraseña?
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Admin Panel -->
+        <div id="adminPanel" class="admin-panel hidden">
+          <div class="panel-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <i class="fas fa-user-shield"></i>
+              </div>
+              <div class="user-details">
+                <span class="user-name" id="adminUserName">Admin</span>
+                <span class="user-role">Administrador</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary" onclick="app.logout('administracion')">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Cerrar Sesión</span>
+            </button>
+          </div>
+
+          <!-- Dashboard Stats -->
+          <div class="stats-dashboard">
+            <div class="dashboard-grid">
+              <div class="dashboard-card">
+                <div class="dashboard-card-header">
+                  <i class="fas fa-users"></i>
+                  <span>Tatuadores</span>
+                </div>
+                <div class="dashboard-card-value" id="totalTatuadores">0</div>
+              </div>
+              <div class="dashboard-card">
+                <div class="dashboard-card-header">
+                  <i class="fas fa-gavel"></i>
+                  <span>Jurados</span>
+                </div>
+                <div class="dashboard-card-value" id="totalJurados">0</div>
+              </div>
+              <div class="dashboard-card">
+                <div class="dashboard-card-header">
+                  <i class="fas fa-chart-line"></i>
+                  <span>Evaluaciones</span>
+                </div>
+                <div class="dashboard-card-value" id="totalEvaluaciones">0</div>
+              </div>
+              <div class="dashboard-card">
+                <div class="dashboard-card-header">
+                  <i class="fas fa-star"></i>
+                  <span>Promedio</span>
+                </div>
+                <div class="dashboard-card-value" id="promedioGeneral">0.0</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin Tabs -->
+          <div class="admin-tabs">
+            <div class="tabs-header">
+              <button class="tab-btn active" data-tab="usuarios">
+                <i class="fas fa-users"></i>
+                <span>Usuarios</span>
+              </button>
+              <button class="tab-btn" data-tab="evaluaciones">
+                <i class="fas fa-star"></i>
+                <span>Evaluaciones</span>
+              </button>
+              <button class="tab-btn" data-tab="configuracion">
+                <i class="fas fa-cog"></i>
+                <span>Configuración</span>
+              </button>
+            </div>
+
+            <!-- Users Tab -->
+            <div id="usuariosTab" class="tab-pane active">
+              <div class="admin-section">
+                <div class="admin-section-header">
+                  <h4>
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Tatuadores Registrados</span>
+                  </h4>
+                </div>
+                <div class="admin-table-wrapper">
+                  <table class="admin-table">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Categoría</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tatuadoresTable">
+                      <tr class="no-data">
+                        <td colspan="5">No hay tatuadores registrados</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="admin-section">
+                <div class="admin-section-header">
+                  <h4>
+                    <i class="fas fa-gavel"></i>
+                    <span>Jurados Registrados</span>
+                  </h4>
+                </div>
+                <div class="admin-table-wrapper">
+                  <table class="admin-table">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Experiencia</th>
+                        <th>Especialidad</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody id="juradosTable">
+                      <tr class="no-data">
+                        <td colspan="5">No hay jurados registrados</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Evaluations Tab -->
+            <div id="evaluacionesTab" class="tab-pane">
+              <div class="admin-section">
+                <div class="admin-section-header">
+                  <h4>
+                    <i class="fas fa-star"></i>
+                    <span>Evaluaciones Realizadas</span>
+                  </h4>
+                </div>
+                <div class="admin-table-wrapper">
+                  <table class="admin-table">
+                    <thead>
+                      <tr>
+                        <th>Jurado</th>
+                        <th>Tatuador</th>
+                        <th>Categoría</th>
+                        <th>Puntuación</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody id="evaluacionesTable">
+                      <tr class="no-data">
+                        <td colspan="6">No hay evaluaciones realizadas</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Configuration Tab -->
+            <div id="configuracionTab" class="tab-pane">
+              <div class="admin-section">
+                <div class="admin-section-header">
+                  <h4>
+                    <i class="fas fa-key"></i>
+                    <span>Gestión de Credenciales del Sistema</span>
+                  </h4>
+                </div>
+                
+                <!-- Cambio de contraseña de admin -->
+                <div class="config-grid">
+                  <div class="config-card">
+                    <h5>
+                      <i class="fas fa-user-shield"></i>
+                      Contraseña de Administrador
+                    </h5>
+                    <form id="adminPasswordForm" class="config-form">
+                      <div class="form-group">
+                        <label for="adminNewPassword">
+                          <i class="fas fa-lock"></i>
+                          Nueva Contraseña
+                        </label>
+                        <input type="password" id="adminNewPassword" name="newPassword" required minlength="8">
+                        <div class="form-hint">Mínimo 8 caracteres</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="adminConfirmPassword">
+                          <i class="fas fa-lock"></i>
+                          Confirmar Contraseña
+                        </label>
+                        <input type="password" id="adminConfirmPassword" name="confirmPassword" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i>
+                        Actualizar Contraseña
+                      </button>
+                    </form>
+                  </div>
+
+                  <!-- Gestión de credenciales de módulos -->
+                  <div class="config-card">
+                    <h5>
+                      <i class="fas fa-users-cog"></i>
+                      Credenciales de Módulos
+                    </h5>
+                    <div class="credentials-management">
+                      <div class="credential-section">
+                        <div class="credential-header">
+                          <h6>
+                            <i class="fas fa-star"></i>
+                            Sistema de Evaluación
+                          </h6>
+                          <div class="credential-actions">
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="app.showCredentials('evaluacion')">
+                              <i class="fas fa-eye"></i>
+                              Ver
+                            </button>
+                            <button type="button" class="btn btn-sm btn-primary" onclick="app.regenerateCredentials('evaluacion')">
+                              <i class="fas fa-refresh"></i>
+                              Regenerar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="credential-section">
+                        <div class="credential-header">
+                          <h6>
+                            <i class="fas fa-user-plus"></i>
+                            Sistema de Registro
+                          </h6>
+                          <div class="credential-actions">
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="app.showCredentials('registro')">
+                              <i class="fas fa-eye"></i>
+                              Ver
+                            </button>
+                            <button type="button" class="btn btn-sm btn-primary" onclick="app.regenerateCredentials('registro')">
+                              <i class="fas fa-refresh"></i>
+                              Regenerar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="credential-section">
+                        <div class="credential-header">
+                          <h6>
+                            <i class="fas fa-trophy"></i>
+                            Sistema de Resultados
+                          </h6>
+                          <div class="credential-actions">
+                            <button type="button" class="btn btn-sm btn-secondary" onclick="app.showCredentials('resultados')">
+                              <i class="fas fa-eye"></i>
+                              Ver
+                            </button>
+                            <button type="button" class="btn btn-sm btn-primary" onclick="app.regenerateCredentials('resultados')">
+                              <i class="fas fa-refresh"></i>
+                              Regenerar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="admin-section">
+                <div class="admin-section-header">
+                  <h4>
+                    <i class="fas fa-database"></i>
+                    <span>Gestión de Datos</span>
+                  </h4>
+                </div>
+                <div class="data-actions">
+                <button class="btn btn-secondary" onclick="app.exportData()">
+                  <i class="fas fa-download"></i>
+                  <span>Exportar Datos</span>
+                </button>
+                <button class="btn btn-secondary" onclick="app.exportScores()">
+                  <i class="fas fa-download"></i>
+                  <span>Exportar Puntuaciones</span>
+                </button>
+                <button class="btn btn-danger" onclick="app.resetSystem()">
+                  <i class="fas fa-trash-alt"></i>
+                  <span>Resetear Sistema</span>
+                </button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <div id="passwordRecoveryModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3><i class="fas fa-key"></i> Recuperar Contraseña</h3>
+        <button class="modal-close" onclick="AuthManager.hidePasswordRecovery()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form id="passwordRecoveryForm" class="modal-form">
+        <div class="form-group">
+          <label for="recoveryEmail">
+            <i class="fas fa-envelope"></i>
+            <span>Email de Recuperación</span>
+          </label>
+          <input type="email" id="recoveryEmail" name="email" required 
+                 placeholder="Ingresa tu email registrado">
+          <div class="form-hint">Ingresa tu email registrado</div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            <span>Enviar Instrucciones</span>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="AuthManager.hidePasswordRecovery()">
+            Cancelar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-icon">
+            <i class="fas fa-dragon"></i>
+          </div>
+          <div class="brand-text">
+            <h3>World Tattoo Rating</h3>
+            <span class="brand-subtitle">Global Platform</span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Plataforma</h4>
+            <ul>
+              <li><a href="#home" data-section="home">Inicio</a></li>
+              <li><a href="#registro" data-section="registro">Registro</a></li>
+              <li><a href="#evaluacion" data-section="evaluacion">Evaluación</a></li>
+              <li><a href="#resultados" data-section="resultados">Resultados</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Categorías</h4>
+            <ul>
+              <li>Realismo Color</li>
+              <li>Blackwork</li>
+              <li>Neo-Tradicional</li>
+              <li>Anime & Comic</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Comunidad</h4>
+            <ul>
+              <li>Tatuadores</li>
+              <li>Jurados Expertos</li>
+              <li>Eventos Mundiales</li>
+              <li>Certificaciones</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+              <a href="https://www.instagram.com/worldtattoorating" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/worldtattoorating" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.twitter.com/worldtattoorating" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.youtube.com/worldtattoorating" target="_blank" class="social-link">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://wa.me/3043627001" target="_blank" class="social-link">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 World Tattoo Rating Platform. Todos los derechos reservados.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Términos de Uso</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
